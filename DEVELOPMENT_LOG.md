@@ -146,3 +146,53 @@ The lexer now handles all features I have defined so far.
 
 Convert the current printed lexer output into actual `Token` objects so that the lexer can produce structured output for the parser.
 
+## Day 3 — Token Objects and Token Storage
+
+### Goal
+
+Convert the lexer output from simple printed strings into actual stored tokens containing both the token type and the original value written by the user.
+
+### What I Implemented
+
+* Created a `Token` structure to store:
+
+  * **Token type** — what the lexer recognized.
+  * **Value/Lexeme** — the actual text written in the source code.
+* Changed the lexer to store tokens in a `List<Token>`.
+* Replaced the previous map-based token storage because a `Map` could not preserve repeated tokens such as multiple `;` symbols.
+* Used a `for-each` loop to access and display every stored token.
+* Tested the lexer with all currently defined keywords, identifiers, and statement terminators.
+
+### Example
+
+For:
+
+`int age;`
+
+the lexer now stores:
+
+```text
+INT = int
+IDENTIFIER = age
+END = ;
+```
+
+### Important Learning
+
+A lexer must preserve the **order and repetition** of tokens. Therefore, a list of token objects is more appropriate than a map.
+
+Each token now represents:
+
+```text
+Token
+├── Type
+└── Value
+```
+
+### Current Status
+
+The lexer successfully recognizes and stores all features defined so far, with both token type and source value preserved.
+
+### Next Step
+
+Begin designing the parser that will consume the stored `List<Token>` and start understanding the structure of the program.
