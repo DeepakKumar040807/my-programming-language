@@ -96,8 +96,6 @@ The lexer can currently recognize:
 
 The next revision will focus on making the scanner more robust against edge cases rather than adding many new features.
 
-# Development Log
-
 ## Day 2 — Lexer Development
 
 ### Goal
