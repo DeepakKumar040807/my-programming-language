@@ -77,26 +77,8 @@ public class Parser001 {
                             break;
                     }
 
-//                    switch (y){
-//                        case 1:
-//                            System.out.println(" IDENTIFIER AND DATATYPE CAN NOT BE FOUND");
-//                            break;
-//                        case 2 :
-//                            System.out.println("IDENTIFIER AND TERMINATOR NOT FOUND");
-//                            break;
-//                        case 4:
-//                            System.out.println("DATATYPE AND TERMINATOR NOT FOUND");
-//                            break;
-//                        case 3:
-//                            System.out.println("IDENTIFIER NOT FOUND");
-//                            break;
-//                        case 5:
-//                            System.out.println("DATATYPE NOT FOUND");
-//                            break;
-//                        case 6:
-//                            System.out.println("TERMINATOR NOT FOUND");
-//                            break;
-//                    }
+
+                    
 
 
                 }
